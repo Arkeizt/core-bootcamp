@@ -4,6 +4,8 @@ import "hardhat/console.sol";
 
 error YouAreNotError();
 
+//error uiauauauia();
+
 contract SolidityErrors {
     address admin;
     uint256 balance = 0;
@@ -16,6 +18,7 @@ contract SolidityErrors {
     modifier isAdmin() {
         if (msg.sender != admin) {
             revert YouAreNotError();
+            //revert uiauauauia();
         }
         _;
     }
